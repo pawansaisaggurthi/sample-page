@@ -5,12 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Us - Events Studio by Globibo</title>
 <style>
-/* Styles here */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
 }
 
 .container {
@@ -23,7 +22,7 @@ body {
 }
 
 .header {
-    background-color: #007bff;
+    background: linear-gradient(93.86deg, #FF5789 9.08%, #A704FD 100.25%);
     color: #fff;
     padding: 20px;
     border-top-left-radius: 10px;
@@ -32,10 +31,13 @@ body {
 
 .header h1 {
     margin: 0;
+    background: linear-gradient(93.86deg, #FF5789 9.08%, #A704FD 100.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer {
-    background-color: #007bff;
+    background: linear-gradient(93.86deg, #FF5789 9.08%, #A704FD 100.25%);
     color: #fff;
     padding: 10px 20px;
     text-align: center;
@@ -43,16 +45,10 @@ body {
     border-bottom-right-radius: 10px;
 }
 
-h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-h3 {
-    color: #333;
-    font-size: 20px;
-    margin-bottom: 10px;
+h2, h3 {
+    background: linear-gradient(93.86deg, #FF5789 9.08%, #A704FD 100.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -97,6 +93,23 @@ ul {
 
 .features li:nth-child(4n + 4) {
     background-color: #dc3545; /* Red theme */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .features li {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .features li {
+        width: 100%;
+    }
 }
 </style>
 </head>
