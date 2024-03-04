@@ -41,12 +41,36 @@ ul {
     padding: 0;
 }
 
-ul li {
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.features li {
+    width: calc(25% - 10px);
     background-color: #f2f2f2;
     border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
     color: #333;
+    box-sizing: border-box;
+}
+
+.features li:nth-child(4n + 1) {
+    background-color: #b1d8e6; /* Blue theme */
+}
+
+.features li:nth-child(4n + 2) {
+    background-color: #ffd699; /* Orange theme */
+}
+
+.features li:nth-child(4n + 3) {
+    background-color: #a2c8a5; /* Green theme */
+}
+
+.features li:nth-child(4n + 4) {
+    background-color: #f0a0a0; /* Red theme */
 }
 </style>
 </head>
@@ -93,8 +117,8 @@ ul li {
     </section>
 
     <section>
-         <h3>Features/Modules</h3>
-        <ul>
+     <h3>Features/Modules</h3>
+        <ul class="features">
             <li>Agenda</li>
             <li>Auction</li>
             <li>Article</li>
